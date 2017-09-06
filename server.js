@@ -18,3 +18,7 @@ app.get( '/', function( req, res ){
   res.sendFile( path.resolve( 'views/index.html' ) );
 }); // end base url
 
+app.get( '/dead', function( req, res ){
+  console.log( "I'm dead..." );
+  res.send('meow');
+}); // end /dead
